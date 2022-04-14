@@ -1,12 +1,12 @@
 app-id: com.riverbankcomputing.PyQt.BaseApp
-branch: 5.15-21.08
+branch: '6.2'
 runtime: org.kde.Platform
-runtime-version: 5.15-21.08
+runtime-version: '6.2'
 sdk: org.kde.Sdk
 command: QtWebEngineProcess
 separate-locales: false
 base: io.qt.qtwebengine.BaseApp
-base-version: 5.15-21.08
+base-version: '6.2'
 x-base-commit: 18745efdd443a44236ea0486179aca74f9a664310fecdcf42199f7e68a754d0a
 modules:
   - python-packaging-tools/python-packaging-tools.json

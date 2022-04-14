@@ -2,7 +2,7 @@
     "name": "pyqt-webengine",
     "build-options": {
         "env": [
-            "QMAKEPATH=/app/lib"
+            "QMAKEPATH=/app"
         ]
     },
     "config-opts": [
@@ -23,12 +23,12 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://files.pythonhosted.org/packages/60/66/56e118abb4cddd8e4bea6f89bdec834069b52479fb991748f1b21950811e/PyQtWebEngine-5.15.5.tar.gz",
-            "sha256": "ab47608dccf2b5e4b950d5a3cc704b17711af035024d07a9b71ad29fc103b941",
+            "url": "https://files.pythonhosted.org/packages/eb/ac/9deb287f98b3f8fa6227c6ca73d763c5d89d292d56c20d4057831f0c62e8/PyQt6_WebEngine-6.3.0.tar.gz",
+            "sha256": "ab2aedbeec54f1bcff872f7dfc236aa0fce4b55cd30f608ca89b408ee9e8147b",
             "x-checker-data": {
                 "is-main-source": true,
                 "type": "pypi",
-                "name": "PyQtWebEngine"
+                "name": "PyQt6-WebEngine"
             }
         },
         {

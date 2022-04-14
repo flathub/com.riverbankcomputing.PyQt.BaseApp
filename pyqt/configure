@@ -12,12 +12,12 @@ else
     --enable=QtDBus
     --enable=QtGui
     --enable=QtHelp
-    --enable=QtLocation
     --enable=QtMultimedia
     --enable=QtMultimediaWidgets
     --enable=QtNetwork
     --enable=QtNfc
     --enable=QtOpenGL
+    --enable=QtOpenGLWidgets
     --enable=QtPositioning
     --enable=QtPrintSupport
     --enable=QtQml
@@ -28,14 +28,12 @@ else
     --enable=QtSerialPort
     --enable=QtSql
     --enable=QtSvg
+    --enable=QtSvgWidgets
     --enable=QtTest
-    --enable=QtTextToSpeech
     --enable=QtWebChannel
     --enable=QtWebSockets
     --enable=QtWidgets
-    --enable=QtX11Extras
     --enable=QtXml
-    --enable=QtXmlPatterns
   )
 fi
 

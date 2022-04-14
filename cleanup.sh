@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # pyqt
-rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt5/bindings
+rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6/bindings
 rm -rfv ${FLATPAK_DEST}/share/qt
 
 # pyqt-builder
@@ -11,9 +11,9 @@ rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/pyqtbuild
 
 # pyqt-sip
 # TODO: figure out if this can be removed, required by pyqt
-#rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt5/sip.cpython-*-${FLATPAK_ARCH}-linux-gnu.so
-#rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt5_sip-*.dist-info
-#rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt5_sip-*-py*.egg-info
+#rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6/sip.cpython-*-${FLATPAK_ARCH}-linux-gnu.so
+#rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6_sip-*.dist-info
+#rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6_sip-*-py*.egg-info
 
 # python-build
 rm -rfv ${FLATPAK_DEST}/bin/pyproject-build
@@ -71,20 +71,20 @@ if [ -n "$BASEAPP_REMOVE_PYWEBENGINE" ]; then
   rm -rfv ${FLATPAK_DEST}/lib/lib{minizip,pci,re2,snappy}.so*
 
   # pyqtwebengine
-  rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt5/QtWebEngine{,Core,Widgets}.abi3.so
-  rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQtWebEngine-*.dist-info
+  rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6/QtWebEngine{,Core,Quick,Widgets}.abi3.so
+  rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6_WebEngine-*.dist-info
 
   # qtwebview
-  rm -rfv ${FLATPAK_DEST}/lib/qml/QtWebView
-  rm -rfv ${FLATPAK_DEST}/lib/plugins/webview
-  rm -rfv ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/libQt*WebView.so*
+  rm -rfv ${FLATPAK_DEST}/qml/QtWebView
+  rm -rfv ${FLATPAK_DEST}/plugins/webview
+  rm -rfv ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/libQt*WebView{,Quick}.so*
 
   # qtwebengine
   rm -rfv ${FLATPAK_DEST}/bin/QtWebEngineProcess
-  rm -rfv ${FLATPAK_DEST}/lib/plugins/imageformats
-  rm -rfv ${FLATPAK_DEST}/lib/qml/{QtQuick/Pdf,QtWebEngine}
-  rm -rfv ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/libQt*{Pdf{,Widgets},WebEngine{,Core,Widgets}}.so*
-  rm -fv ${FLATPAK_DEST}/lib/libQt*{Pdf{,Widgets},WebEngine{,Core,Widgets}}.so*
+  rm -rfv ${FLATPAK_DEST}/plugins/imageformats
+  rm -rfv ${FLATPAK_DEST}/qml/{QtQuick/Pdf,QtWebEngine}
+  rm -rfv ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/libQt*{Pdf{,Quick,Widgets},WebEngine{,Core,Quick{,DelegatesQml},Widgets}}.so*
+  rm -fv ${FLATPAK_DEST}/lib/libQt*{Pdf{,Quick,Widgets},WebEngine{,Core,Quick{,DelegatesQml},Widgets}}.so*
   rm -rfv ${FLATPAK_DEST}/qtwebengine_dictionaries
   rm -rfv ${FLATPAK_DEST}/resources/qtwebengine*.pak
   rm -rfv ${FLATPAK_DEST}/share/locale/*/qtwebengine_dictionaries
@@ -92,9 +92,9 @@ if [ -n "$BASEAPP_REMOVE_PYWEBENGINE" ]; then
 
   # empty folders
   rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/etc
-  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/plugins
-  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/qml/QtQuick
-  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/qml
+  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/plugins
+  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/qml/QtQuick
+  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/qml
   rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu
   rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/resources
   rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/locale/*/LC_MESSAGES
