@@ -1,12 +1,8 @@
 {
     "name": "pyqt",
     "build-options": {
-        "arch": {
-            "x86_64": {
-                "env": {
-                    "EXTRA_PYQT_CONFIG_OPTS": "--disabled-feature=PyQt_OpenGL_ES2"
-                }
-            }
+        "env": {
+            "EXTRA_PYQT_CONFIG_OPTS": "--disabled-feature=PyQt_OpenGL_ES2"
         }
     },
     "config-opts": [
