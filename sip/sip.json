@@ -17,6 +17,7 @@
         }
     ],
     "modules": [
+        "../python-ply/python-ply.json",
         "../python-toml/python-toml.json"
     ]
 }
