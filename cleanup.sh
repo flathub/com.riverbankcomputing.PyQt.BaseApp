@@ -104,3 +104,4 @@ if [ -n "$BASEAPP_REMOVE_PYWEBENGINE" ]; then
 fi
 
 rm -rfv $(readlink -f "$0")
+
