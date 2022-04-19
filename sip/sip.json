@@ -8,8 +8,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://files.pythonhosted.org/packages/de/c1/9ac5596c10f6ce28abc1849ed1b6299b3953af0b6ff21e227024991a517e/sip-6.5.1.tar.gz",
-            "sha256": "204f0240db8999a749d638a987b351861843e69239b811ec3d1881412c3706a6",
+            "url": "https://files.pythonhosted.org/packages/c6/08/34642c4db19e9d41f43640547c5a997cb9b12b512f8c61d0d476e8b9e883/sip-6.6.1.tar.gz",
+            "sha256": "696c575c72144122701171f2cc767fe6cc87050ea755a04909152a8508ae10c3",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "sip"
@@ -17,6 +17,7 @@
         }
     ],
     "modules": [
+        "../python-ply/python-ply.json",
         "../python-toml/python-toml.json"
     ]
 }
