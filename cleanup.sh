@@ -92,17 +92,41 @@ if [ -n "$BASEAPP_REMOVE_WEBENGINE" ] || [ -n "$BASEAPP_REMOVE_PYWEBENGINE" ]; t
   rm -rfv ${FLATPAK_DEST}/share/locale/*/qtwebengine_dictionaries
   rm -rfv ${FLATPAK_DEST}/translations/qtwebengine_locales
 
-  # empty folders
-  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/etc
-  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/plugins
-  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/qml/QtQuick
-  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/qml
-  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu
-  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/resources
-  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/locale/*/LC_MESSAGES
-  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/locale/*
-  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/locale
-  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/translations
 fi
+
+# empty folders
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/etc
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/plugins
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/qml/QtQuick
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/qml
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/resources
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/locale/*/LC_MESSAGES
+
+# test if separate-locales is enabled
+if [ -d ${FLATPAK_DEST}/share/runtime/locale ]; then
+  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/runtime/locale/*/share/*
+  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/runtime/locale/*/share
+  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/runtime/locale/*
+
+  for e in ${FLATPAK_DEST}/share/locale/*; do
+    # remove broken locale symlinks
+    if [ -L "$e" ]; then
+      [ -e "$e" ] || rm -fv "$e"
+    else
+      # english locales are kept in the app
+      rmdir -v --ignore-fail-on-non-empty "$e"
+    fi
+  done
+
+  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/runtime/locale
+  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/runtime
+
+else
+  rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/locale/*
+fi
+
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/locale
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/translations
 
 rm -rfv $(readlink -f "$0")
