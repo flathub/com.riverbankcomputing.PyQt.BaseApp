@@ -17,11 +17,11 @@
         "--no-docstrings",
         "--no-make",
         "--no-qml-plugin",
-        "--no-tools",
         "--verbose",
         "--api-dir=/app/share/qt/qsci/api/python",
         "--qmake-setting=QMAKE_CFLAGS_RELEASE='-I/usr/include/python_pyver/'",
         "--qmake-setting=QMAKE_CXXFLAGS_RELEASE='-I/usr/include/python_pyver/'",
+        "--scripts-dir=/app/bin",
         "--target-dir=/app/lib/python_pyver/site-packages",
         "--qt-shared"
     ],

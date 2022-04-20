@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # pyqt
+rm -rfv ${FLATPAK_DEST}/bin/py{lupdate,rcc,uic}5
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt5/bindings
+rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt5/{pylupdate,pyrcc}*
 rm -rfv ${FLATPAK_DEST}/share/qt
 
 # pyqt-builder
