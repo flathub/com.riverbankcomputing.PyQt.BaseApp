@@ -12,6 +12,7 @@ else
     --enable=QtBluetooth
     --enable=QtCore
     --enable=QtDBus
+    --enable=QtDesigner
     --enable=QtGui
     --enable=QtHelp
     --enable=QtLocation
