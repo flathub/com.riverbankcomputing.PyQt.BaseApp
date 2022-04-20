@@ -63,7 +63,7 @@ modules:
 
 ### Example: PyQt application
 
-While it's not required, it's possible to set the environment variable `BASEAPP_REMOVE_PYWEBENGINE` to have the  
+While it's not required, it's possible to set the environment variable `BASEAPP_REMOVE_WEBENGINE` to have the  
 `BaseApp-cleanup.sh` script remove the PyQtWebEngine bindings and QtWebEngine with its dependencies.
 
 ```yaml
@@ -77,7 +77,7 @@ cleanup-commands:
   - /app/cleanup-BaseApp.sh
 build-options:
   env:
-    - BASEAPP_REMOVE_PYWEBENGINE=1
+    - BASEAPP_REMOVE_WEBENGINE=1
 modules:
   - name: PyQtApp
 ...
