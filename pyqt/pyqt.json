@@ -10,7 +10,6 @@
         "--confirm-license",
         "--debug",
         "--no-designer-plugin",
-        "--no-docstrings",
         "--no-make",
         "--no-qml-plugin",
         "--verbose",
