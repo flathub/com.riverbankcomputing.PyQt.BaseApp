@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # pyqt
+rm -rfv ${FLATPAK_DEST}/bin/py{lupdate,uic}6
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6/bindings
 rm -rfv ${FLATPAK_DEST}/share/qt
 
