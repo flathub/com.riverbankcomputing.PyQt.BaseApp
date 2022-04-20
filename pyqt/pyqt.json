@@ -9,7 +9,6 @@
         "--concatenate=1",
         "--confirm-license",
         "--debug",
-        "--no-designer-plugin",
         "--no-make",
         "--verbose",
         "--api-dir=/app/share/qt/qsci/api/python",
