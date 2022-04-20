@@ -15,7 +15,6 @@
         "--debug",
         "--no-designer-plugin",
         "--no-make",
-        "--no-qml-plugin",
         "--verbose",
         "--api-dir=/app/share/qt/qsci/api/python",
         "--qmake-setting=QMAKE_CFLAGS_RELEASE='-I/usr/include/python_pyver/'",
@@ -39,6 +38,10 @@
                 "type": "pypi",
                 "name": "PyQt5"
             }
+        },
+        {
+            "type": "patch",
+            "path": "pyqt-plugins-dir.patch"
         },
         {
             "type": "file",
