@@ -24,7 +24,6 @@ Build tools are included to help package extra PytQt bindings and Python modules
 * python-build
 * python-flit-core
 * python-installer
-* python-packaging
 * python-pep517
 * python-setuptools-scm
 
@@ -39,6 +38,7 @@ Build tools are included to help package extra PytQt bindings and Python modules
 While the following Python modules are dependencies of the mentioned build tools, they are not removed by the  
 `BaseApp-cleanup.sh` script, as they might be needed by the Flatpak application.
 
+* python-packaging
 * python-pyparsing
 * python-tomli
 * python-toml
