@@ -8,7 +8,6 @@
     "config-opts": [
         "--concatenate=1",
         "--debug",
-        "--no-docstrings",
         "--verbose",
         "--qmake-setting=QMAKE_CFLAGS_RELEASE='-I/usr/include/python_pyver/'",
         "--qmake-setting=QMAKE_CXXFLAGS_RELEASE='-I/usr/include/python_pyver/'",

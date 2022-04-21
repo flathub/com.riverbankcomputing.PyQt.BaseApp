@@ -7,9 +7,12 @@ if [ -n "$ENABLED_PYQT_BINDINGS" ]; then
   done
 else
   pyqt_bindings=(
+    --enable=pylupdate
+    --enable=pyrcc
     --enable=QtBluetooth
     --enable=QtCore
     --enable=QtDBus
+    --enable=QtDesigner
     --enable=QtGui
     --enable=QtHelp
     --enable=QtLocation
