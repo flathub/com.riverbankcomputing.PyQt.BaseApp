@@ -39,9 +39,10 @@ While the following Python modules are dependencies of the mentioned build tools
 `BaseApp-cleanup.sh` script, as they might be needed by the Flatpak application.
 
 * python-packaging
+* python-ply
 * python-pyparsing
-* python-tomli
 * python-toml
+* python-tomli
 
 ## How to use?
 
