@@ -1,0 +1,15 @@
+app-id: org.kde.PyQtWebEngineApp
+runtime: org.kde.Platform
+runtime-version: '6.2'
+sdk: org.kde.Sdk
+base: com.riverbankcomputing.PyQt.BaseApp
+base-version: '6.2'
+cleanup-commands:
+  - /app/cleanup-BaseApp.sh
+modules:
+  - name: PyQtWebEngineApp
+    buildsystem: simple
+    # this is here only for testing purposes,
+    # without it, our empty example flatpak manifest won't trigger locale extensions generation
+    build-commands:
+      - echo 'Doing nothing!'

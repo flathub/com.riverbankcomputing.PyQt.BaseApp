@@ -1,0 +1,11 @@
+--- a/project.py  2021-10-29 17:11:33.373185900 +0300
++++ b/project.py      2022-04-20 18:52:50.681006176 +0300
+@@ -319,7 +319,7 @@
+
+         # Where the plugin will (eventually) be installed.
+         target_plugin_dir = os.path.join(
+-                builder.qt_configuration['QT_INSTALL_PLUGINS'], target_subdir)
++                builder.qt_configuration['QT_INSTALL_PLUGINS'].replace('/usr', os.getenv('FLATPAK_DEST')), target_subdir)
+
+         # Create the buildable and add it to the builder.
+         buildable = Buildable(self, name)
