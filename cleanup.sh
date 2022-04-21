@@ -33,11 +33,6 @@ rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/installer
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/installer-*.dist-info
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/installer-*-py*.egg-info
 
-# python-packaging
-rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/packaging
-rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/packaging-*.dist-info
-rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/packaging-*-py*.egg-info
-
 # python-pep517
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/pep517
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/pep517-*.dist-info
