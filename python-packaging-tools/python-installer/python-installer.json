@@ -7,8 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/1b/21/3e6ebd12d8dccc55bcb7338db462c75ac86dbd0ac7439ac114616b21667b/installer-0.5.1-py3-none-any.whl",
-            "sha256": "1d6c8d916ed82771945b9c813699e6f57424ded970c9d8bf16bbc23e1e826ed3",
+            "url": "https://files.pythonhosted.org/packages/9d/fb/12c243d82265086f0d9238aba5323892d08a35a27688df837e489b86576b/installer-0.4.0-py2.py3-none-any.whl",
+            "sha256": "49e5019882c9cfccbefa85170b60df8ea62c4f5ccf81bea8eecf8c4734d5737d",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "installer",
