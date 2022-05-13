@@ -1,12 +1,12 @@
 app-id: com.riverbankcomputing.PyQt.BaseApp
-branch: '6.2'
+branch: '6.3'
 runtime: org.kde.Platform
-runtime-version: '6.2'
+runtime-version: '6.3'
 sdk: org.kde.Sdk
 command: QtWebEngineProcess
 separate-locales: false
 base: io.qt.qtwebengine.BaseApp
-base-version: '6.2'
+base-version: '6.3'
 x-base-commit: 170faf35df673423c57408748f2cabecafeb6c602fa0be2dd1b3534d43482671
 modules:
   - name: lib_python
