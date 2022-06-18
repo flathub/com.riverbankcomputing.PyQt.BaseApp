@@ -31,8 +31,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://files.pythonhosted.org/packages/3b/27/fd81188a35f37be9b3b4c2db1654d9439d1418823916fe702ac3658c9c41/PyQt5-5.15.6.tar.gz",
-            "sha256": "80343bcab95ffba619f2ed2467fd828ffeb0a251ad7225be5fc06dcc333af452",
+            "url": "https://files.pythonhosted.org/packages/e1/57/2023316578646e1adab903caab714708422f83a57f97eb34a5d13510f4e1/PyQt5-5.15.7.tar.gz",
+            "sha256": "755121a52b3a08cb07275c10ebb96576d36e320e572591db16cfdbc558101594",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "PyQt5"
