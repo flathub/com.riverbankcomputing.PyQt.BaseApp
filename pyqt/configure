@@ -9,6 +9,7 @@ else
   pyqt_bindings=(
     --enable=pylupdate
     --enable=pyrcc
+    --enable=Qt
     --enable=QtBluetooth
     --enable=QtCore
     --enable=QtDBus
