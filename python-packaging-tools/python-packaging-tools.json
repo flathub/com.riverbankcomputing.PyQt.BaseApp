@@ -4,6 +4,7 @@
         "python-build/python-build.json",
         "python-installer/python-installer.json",
         "python-flit-core/python-flit-core.json",
+        "python-typing-extensions/python-typing-extensions.json",
         "python-setuptools-scm/python-setuptools-scm.json"
     ]
 }

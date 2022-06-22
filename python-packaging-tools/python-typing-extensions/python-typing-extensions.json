@@ -1,0 +1,19 @@
+{
+    "name": "python-typing-extensions",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=file://${PWD} --prefix=${FLATPAK_DEST} typing-extensions --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/75/e1/932e06004039dd670c9d5e1df0cd606bf46e29a28e65d5bb28e894ea29c9/typing_extensions-4.2.0-py3-none-any.whl",
+            "sha256": "6657594ee297170d19f67d55c05852a874e7eb634f4f753dbd667855e07c1708",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "typing-extensions",
+                "packagetype": "bdist_wheel"
+            }
+        }
+    ]
+}

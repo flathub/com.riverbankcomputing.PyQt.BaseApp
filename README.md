@@ -43,6 +43,7 @@ While the following Python modules are dependencies of the mentioned build tools
 * python-pyparsing
 * python-toml
 * python-tomli
+* python-typing-extensions
 
 ## How to use?
 
