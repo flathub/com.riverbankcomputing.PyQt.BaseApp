@@ -27,7 +27,7 @@ jobs:
         branch: [ branch/5.15-21.08, branch/6.2 ]
     steps:
       - name: Git checkout ${{ github.repository }}.git/${{ matrix.branch }}
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ matrix.branch }}
 
