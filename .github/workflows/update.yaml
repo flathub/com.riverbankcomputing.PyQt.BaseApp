@@ -31,6 +31,10 @@ jobs:
         with:
           ref: ${{ matrix.branch }}
 
+      - name: Prepare local checkout
+        run: |
+                git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
       - name: Download go-yq
         run: |
               curl -L https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 |
