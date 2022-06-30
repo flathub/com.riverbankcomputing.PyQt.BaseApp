@@ -1,0 +1,26 @@
+name: Update wiki
+on:
+  push:
+    branches:
+      - wiki
+  workflow_dispatch: {}
+jobs:
+  update-wiki:
+    runs-on: ubuntu-latest
+    env:
+      GIT_AUTHOR_NAME: github-actions[bot]
+      GIT_COMMITTER_NAME: github-actions[bot]
+      GIT_AUTHOR_EMAIL: github-actions[bot]@users.noreply.github.com
+      GIT_COMMITTER_EMAIL: github-actions[bot]@users.noreply.github.com
+      EMAIL: github-actions[bot]@users.noreply.github.com
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    if: github.repository_owner == 'flathub'
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: wiki
+          fetch-depth: '0'
+      - name: Push to wiki
+        run: |
+              git remote add wiki_repo https://github-actions[bot]:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.wiki.git
+              git push wiki_repo wiki:master
