@@ -1,6 +1,7 @@
 {
     "automerge-flathubbot-prs": false,
     "disable-external-data-checker": true,
+    "end-of-life": "Branch 6.2 of the PyQt base application is no longer supported. A PyQt 6 branch matching a more recent KDE runtime is available.",
     "publish-delay-hours": 1,
     "skip-appstream-check": true
 }
