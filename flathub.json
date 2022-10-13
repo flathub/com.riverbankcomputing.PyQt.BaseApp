@@ -1,6 +1,5 @@
 {
     "automerge-flathubbot-prs": false,
     "disable-external-data-checker": true,
-    "publish-delay-hours": 1,
     "skip-appstream-check": true
 }
