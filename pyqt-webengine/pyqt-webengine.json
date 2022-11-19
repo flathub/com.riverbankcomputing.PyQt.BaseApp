@@ -22,8 +22,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://files.pythonhosted.org/packages/90/99/59acbe75fb0ad284945d27e40f68c642850c7a186bfc9cc338c3f638d0dc/PyQt6_WebEngine-6.3.1.tar.gz",
-            "sha256": "c3d1f5527b4b15f44102d617c59b1d74d9af50f821629e9335f13df47de8f007",
+            "url": "https://files.pythonhosted.org/packages/c1/54/80bebc08c537723a145442c3997bab122ebc8e540ae807f4291b2ce7f8bb/PyQt6_WebEngine-6.4.0.tar.gz",
+            "sha256": "4c71c130860abcd11e04cafb22e33983fa9a3aee8323c51909b15a1701828e21",
             "x-checker-data": {
                 "is-main-source": true,
                 "type": "pypi",
