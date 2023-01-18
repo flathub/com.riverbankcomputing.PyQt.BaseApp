@@ -31,7 +31,8 @@
             "sha256": "8cc6e21dbaf7047d1fc897e396ccd9710a12f2ef976563dad65f06017d2c9757",
             "x-checker-data": {
                 "type": "pypi",
-                "name": "PyQt6"
+                "name": "PyQt6",
+                "versions": {"<":  "6.4"}
             }
         },
         {

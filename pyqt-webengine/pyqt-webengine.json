@@ -27,7 +27,8 @@
             "x-checker-data": {
                 "is-main-source": true,
                 "type": "pypi",
-                "name": "PyQt6-WebEngine"
+                "name": "PyQt6-WebEngine",
+                "versions": {"<":  "6.4"}
             }
         },
         {
