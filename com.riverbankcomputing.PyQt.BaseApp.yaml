@@ -20,7 +20,7 @@ modules:
   - name: polish
     buildsystem: simple
     build-commands:
-      - mv ${FLATPAK_DEST}/cleanup-BaseApp{,-QtWebEngine}.sh
+      #- mv ${FLATPAK_DEST}/cleanup-BaseApp{,-QtWebEngine}.sh
       - install -Dm755 cleanup.sh ${FLATPAK_DEST}/cleanup-BaseApp.sh
       - install -Dm644 ${FLATPAK_ID}.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
     sources:
