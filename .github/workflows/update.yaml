@@ -24,7 +24,7 @@ jobs:
     if: github.repository_owner == 'flathub'
     strategy:
       matrix:
-        branch: [ branch/5.15-21.08, branch/5.15-22.08, branch/6.3 ]
+        branch: [ branch/5.15-21.08, branch/5.15-22.08, branch/6.3, branch/6.4 ]
     steps:
       - name: Git checkout ${{ github.repository }}.git/${{ matrix.branch }}
         uses: actions/checkout@v3
