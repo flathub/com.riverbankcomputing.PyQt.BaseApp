@@ -53,7 +53,8 @@ rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/sipbuild
   ${FLATPAK_DEST}/cleanup-BaseApp-QtWebEngine.sh
 
 # remove pyqtwebengine
-if [ -n "$BASEAPP_REMOVE_WEBENGINE" ] || [ -n "$BASEAPP_REMOVE_PYWEBENGINE" ]; then
+# currently not available
+if [ 0 == 1]; then #[ -n "$BASEAPP_REMOVE_WEBENGINE" ] || [ -n "$BASEAPP_REMOVE_PYWEBENGINE" ]; then
   # krb5
   rm -rfv ${FLATPAK_DEST}/etc/krb5.conf
   rm -rfv ${FLATPAK_DEST}/lib/krb5

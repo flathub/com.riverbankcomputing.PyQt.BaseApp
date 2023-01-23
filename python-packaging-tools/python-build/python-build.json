@@ -18,7 +18,6 @@
     ],
     "modules": [
         "../python-tomli/python-tomli.json",
-        "../python-pep517/python-pep517.json",
         "../python-packaging/python-packaging.json",
         "../python-pyproject_hooks/python-pyproject_hooks.json"
     ]
