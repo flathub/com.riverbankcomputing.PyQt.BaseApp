@@ -95,7 +95,7 @@ jobs:
 
               # set baseapp variables
               BASEAPP_ID="$(go-yq '.base' $APP_MANIFEST)"
-              if [ -n "$BASEAPP_ID" ]; then
+              if [ -n "$BASEAPP_ID" ] &&  [ "$BASEAPP_ID" != "null" ]; then
                 echo "Found BaseApp $BASEAPP_ID"
                 BASEAPP_ENABLED=1
                 BASEAPP_BRANCH="$(go-yq '.base-version' $APP_MANIFEST)"
