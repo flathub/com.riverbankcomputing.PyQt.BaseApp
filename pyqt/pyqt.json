@@ -32,7 +32,8 @@
             "x-checker-data": {
                 "type": "pypi",
                 "name": "PyQt6",
-                "versions": {"<":  "6.5"}
+                "versions": {"<":  "6.5"},
+                "is-main-source": true
             }
         },
         {
