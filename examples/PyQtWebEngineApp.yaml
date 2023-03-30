@@ -6,6 +6,8 @@ base: com.riverbankcomputing.PyQt.BaseApp
 base-version: 5.15-22.08
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
+finish-args:
+  - --env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess
 modules:
   - name: PyQtWebEngineApp
     buildsystem: simple
