@@ -27,13 +27,13 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://files.pythonhosted.org/packages/c3/e0/e1b592a6253712721612e2e64a323930a724e1f5cf297ed5ec6d6c86dda1/PyQt6-6.4.2.tar.gz",
-            "sha256": "740244f608fe15ee1d89695c43f31a14caeca41c4f02ac36c86dfba4a5d5813d",
+            "url": "https://files.pythonhosted.org/packages/28/01/9e4b91cb0c1023934b1dc654c5bbfc29cbabcbf6092f936b74aee46dd637/PyQt6-6.5.0.tar.gz",
+            "sha256": "b97cb4be9b2c8997904ea668cf3b0a4ae5822196f7792590d05ecde6216a9fbc",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "PyQt6",
                 "versions": {
-                    "<": "6.5"
+                    "<": "6.6"
                 },
                 "is-main-source": true
             }
