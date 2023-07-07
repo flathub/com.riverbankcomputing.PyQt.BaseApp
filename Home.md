@@ -57,7 +57,7 @@ While the following Python modules are dependencies of the mentioned build tools
 | 6.2        | No         | Yes         |
 | 6.3        | Yes        | Yes         |
 | 6.4        | Yes        | No          |
-| 6.5        | Yes        | No          |
+| 6.5        | Yes        | Yes         |
 
 ## How to use?
 
@@ -66,10 +66,10 @@ While the following Python modules are dependencies of the mentioned build tools
 ```yaml
 app-id: org.kde.PyQtWebEngineApp
 runtime: org.kde.Platform
-runtime-version: '6.3'
+runtime-version: '6.5'
 sdk: org.kde.Sdk
 base: com.riverbankcomputing.PyQt.BaseApp
-base-version: '6.3'
+base-version: '6.5'
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 modules:
@@ -85,10 +85,10 @@ While it's not required, it's possible to set the environment variable `BASEAPP_
 ```yaml
 app-id: org.kde.PyQtApp
 runtime: org.kde.Platform
-runtime-version: '6.3'
+runtime-version: '6.5'
 sdk: org.kde.Sdk
 base: com.riverbankcomputing.PyQt.BaseApp
-base-version: '6.3'
+base-version: '6.5'
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 build-options:
