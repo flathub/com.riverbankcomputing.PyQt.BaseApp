@@ -8,8 +8,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://files.pythonhosted.org/packages/c0/08/6bde4b067729a7e0dac6b55654357a2a84af04f1152661cd1602979642a1/PyQt6_sip-13.5.2.tar.gz",
-            "sha256": "ebf6264b6feda01ba37d3b60a4bb87493bdb87be70f7b2a5384a7acd4902d88d",
+            "url": "https://files.pythonhosted.org/packages/98/23/e54e02a44afc357ccab1b88575b90729664164358ceffde43e4f2e549daa/PyQt6_sip-13.6.0.tar.gz",
+            "sha256": "2486e1588071943d4f6657ba09096dc9fffd2322ad2c30041e78ea3f037b5778",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "PyQt6-sip"
