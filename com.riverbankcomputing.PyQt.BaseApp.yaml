@@ -7,7 +7,7 @@ command: QtWebEngineProcess
 separate-locales: false
 base: io.qt.qtwebengine.BaseApp
 base-version: '6.5'
-x-base-commit: 815656900e5421465b33dd5f3b988ba8483fcb64b97ca24324b654c999a6604d
+x-base-commit: 1688d99fa9c7524349c6f4600baf2e83ce836d1e58cbd4d34f351f30ca13c874
 modules:
   - name: lib_python
     buildsystem: simple
