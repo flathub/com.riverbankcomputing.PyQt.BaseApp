@@ -257,11 +257,11 @@ jobs:
               open_pr_ref="$(go-yq -oy 'map(select(.head.ref == "${{ env.BASEAPP_PR_BRANCH }}") | select(.state == "open") | .head.ref ) | .[0]' .tmp.pull.json)"
               closed_pr_ref="$(go-yq -oy 'map(select(.head.ref == "${{ env.BASEAPP_PR_BRANCH }}") | select(.state == "closed") | .head.ref ) | .[0]' .tmp.pull.json)"
 
-              if [ "$open_pr_ref" = "\"${{ env.BASEAPP_PR_BRANCH }}\"" ]; then
+              if [ "$open_pr_ref" = "${{ env.BASEAPP_PR_BRANCH }}" ]; then
                 open_pr_url="$(go-yq -oy 'map(select(.head.ref == "${{ env.BASEAPP_PR_BRANCH }}") | select(.state == "open") | .html_url ) | .[0]' .tmp.pull.json)"
                 echo "Found open pull request at $open_pr_url"
 
-              elif [ "$closed_pr_ref" = "\"${{ env.BASEAPP_PR_BRANCH }}\"" ]; then
+              elif [ "$closed_pr_ref" = "${{ env.BASEAPP_PR_BRANCH }}" ]; then
                 closed_pr_url="$(go-yq -oy 'map(select(.head.ref == "${{ env.BASEAPP_PR_BRANCH }}") | select(.state == "closed") | .html_url ) | .[0]' .tmp.pull.json)"
                 echo "Found closed pull request at $closed_pr_url"
 
