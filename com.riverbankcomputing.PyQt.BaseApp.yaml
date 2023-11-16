@@ -8,6 +8,8 @@ separate-locales: false
 base: io.qt.qtwebengine.BaseApp
 base-version: 5.15-23.08
 x-base-commit: 40f079b41ace5618942b365f2709f3d871cf1baeb1f51708f9d7ff96144b6823
+x-flathub:
+    skip-appstream-check: true
 modules:
   - name: lib_python
     buildsystem: simple
