@@ -44,10 +44,12 @@ rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/setuptools_scm-*.dist-info
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/setuptools_scm-*-py*.egg-info
 
 # sip
-rm -rfv ${FLATPAK_DEST}/bin/sip-{build,distinfo,install,module,sdist,wheel}
-rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/sip-*.dist-info
-rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/sip-*-py*.egg-info
-rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/sipbuild
+if [ -z "$BASEAPP_KEEP_SIP"]; then
+  rm -rfv ${FLATPAK_DEST}/bin/sip-{build,distinfo,install,module,sdist,wheel}
+  rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/sip-*.dist-info
+  rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/sip-*-py*.egg-info
+  rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/sipbuild
+fi
 
 # qtwebengine baseapp
 [ -r ${FLATPAK_DEST}/cleanup-BaseApp-QtWebEngine.sh ] &&
