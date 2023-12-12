@@ -11,7 +11,7 @@ jobs:
     name: Updates check job for ${{ matrix.branch }}
     runs-on: ubuntu-latest
     container:
-      image: bilelmoussaoui/flatpak-github-actions:freedesktop-21.08
+      image: bilelmoussaoui/flatpak-github-actions:freedesktop-23.08
       options: --privileged
     env:
       GIT_AUTHOR_NAME: github-actions[bot]
