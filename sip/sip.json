@@ -8,8 +8,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://files.pythonhosted.org/packages/b1/29/06e5036c035f17e0e874d71d4f5968d70aa879b155335d46f645757ff649/sip-6.8.2.tar.gz",
-            "sha256": "2e65a423037422ccfde095c257703a8ff45cc1c89bdaa294d7819bc836c87639",
+            "url": "https://files.pythonhosted.org/packages/99/85/261c41cc709f65d5b87669f42e502d05cc544c24884121bc594ab0329d8e/sip-6.8.3.tar.gz",
+            "sha256": "888547b018bb24c36aded519e93d3e513d4c6aa0ba55b7cc1affbd45cf10762c",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "sip"
