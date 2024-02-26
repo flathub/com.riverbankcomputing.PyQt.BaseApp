@@ -1,5 +1,6 @@
 {
     "automerge-flathubbot-prs": false,
     "disable-external-data-checker": true,
-    "skip-appstream-check": true
+    "skip-appstream-check": true,
+    "end-of-life": "Branch 5.15-22.08 of the PyQt base application is no longer supported. Please use 5.15-23.08 instead."
 }
