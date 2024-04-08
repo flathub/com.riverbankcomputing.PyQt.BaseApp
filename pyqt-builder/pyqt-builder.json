@@ -2,8 +2,7 @@
     "name": "pyqt-builder",
     "buildsystem": "simple",
     "build-commands": [
-        "python setup.py build",
-        "python setup.py install --skip-build --prefix=$FLATPAK_DEST --root=/ --optimize=1"
+        ""pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"PyQt-builder\" --no-build-isolation""
     ],
     "sources": [
         {
