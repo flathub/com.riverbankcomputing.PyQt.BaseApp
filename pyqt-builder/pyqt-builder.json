@@ -7,8 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/e3/90/930091ec6bae121dd44ccaab0a59308e2b75870c6f76c23247caef68c8c8/pyqt_builder-1.16.1.tar.gz",
-            "sha256": "25fd79248ee29779ca2d83cfd5a35f6da962c6e9711b7434182d6ef30827cb49",
+            "url": "https://files.pythonhosted.org/packages/57/09/11d09b4140932960a4e232e04858ceda19d821f8deb350605934f2251c87/pyqt_builder-1.16.2.tar.gz",
+            "sha256": "bf723cdb7cd23d2512e2acda7bc6b81f00fb05ccc5e9a8846bd34d47514cddb9",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "PyQt-builder"
