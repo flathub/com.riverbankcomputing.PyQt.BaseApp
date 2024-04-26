@@ -6,8 +6,11 @@
   <name>PyQt BaseApp</name>
   <summary>Shared platform for applications that use PyQt</summary>
   <url type="homepage">https://www.riverbankcomputing.com</url>
-  <developer_name>Riverbank Computing Limited</developer_name>
+  <developer id="com.riverbankcomputing">
+    <name>Riverbank Computing Limited</name>
+  </developer>
   <releases>
+    <release version="6.7.0" date="2024-04-26"/>
     <release version="6.6.1" date="2023-12-04"/>
     <release version="6.6.0" date="2023-10-30"/>
     <release version="6.5.3" date="2023-10-14"/>
