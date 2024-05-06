@@ -60,18 +60,19 @@ While the following Python modules are dependencies of the mentioned build tools
 | 6.4        | No         | No          |
 | 6.5        | No         | Yes         |
 | 6.6        | Yes        | Yes         |
+| 6.7        | Yes        | Yes         |
 
 ## How to use?
 
 ### Example: PyQtWebEngine application
 
 ```yaml
-app-id: org.kde.PyQtWebEngineApp
+id: org.kde.PyQtWebEngineApp
 runtime: org.kde.Platform
-runtime-version: '6.6'
+runtime-version: '6.7'
 sdk: org.kde.Sdk
 base: com.riverbankcomputing.PyQt.BaseApp
-base-version: '6.6'
+base-version: '6.7'
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 modules:
@@ -85,12 +86,12 @@ While it's not required, it's possible to set the environment variable `BASEAPP_
 `BaseApp-cleanup.sh` script remove the PyQtWebEngine bindings and QtWebEngine with its dependencies.
 
 ```yaml
-app-id: org.kde.PyQtApp
+id: org.kde.PyQtApp
 runtime: org.kde.Platform
-runtime-version: '6.6'
+runtime-version: '6.7'
 sdk: org.kde.Sdk
 base: com.riverbankcomputing.PyQt.BaseApp
-base-version: '6.6'
+base-version: '6.7'
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 build-options:
