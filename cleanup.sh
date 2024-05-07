@@ -48,6 +48,13 @@ rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/sip-*.dist-info
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/sip-*-py*.egg-info
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/sipbuild
 
+# pkgconfig
+rm -rfv ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/pkgconfig/Qt6*
+
+# appstream
+rm -rfv ${FLATPAK_DEST}/share/metainfo/com.riverbankcomputing.PyQt.BaseApp.metainfo.xml
+rm -rfv ${FLATPAK_DEST}/share/app-info/xmls/com.riverbankcomputing.PyQt.BaseApp.xml.gz
+
 # qtwebengine baseapp
 [ -r ${FLATPAK_DEST}/cleanup-BaseApp-QtWebEngine.sh ] &&
   ${FLATPAK_DEST}/cleanup-BaseApp-QtWebEngine.sh
@@ -82,10 +89,13 @@ if [ -n "$BASEAPP_REMOVE_WEBENGINE" ] || [ -n "$BASEAPP_REMOVE_PYWEBENGINE" ]; t
   rm -rfv ${FLATPAK_DEST}/qml/{QtQuick/Pdf,QtWebEngine}
   rm -rfv ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/libQt*{Pdf{,Quick,Widgets},WebEngine{,Core,Quick{,DelegatesQml},Widgets}}.so*
   rm -fv ${FLATPAK_DEST}/lib/libQt*{Pdf{,Quick,Widgets},WebEngine{,Core,Quick{,DelegatesQml},Widgets}}.so*
+  rm -rfv ${FLATPAK_DEST}/lib/libQt6WebView*.so*
   rm -rfv ${FLATPAK_DEST}/qtwebengine_dictionaries
   rm -rfv ${FLATPAK_DEST}/resources/qtwebengine*.pak
+  rm -rfv ${FLATPAK_DEST}/resources/v8_context_snapshot.bin
   rm -rfv ${FLATPAK_DEST}/share/locale/*/qtwebengine_dictionaries
   rm -rfv ${FLATPAK_DEST}/translations/qtwebengine_locales
+  rm -rfv ${FLATPAK_DEST}/libexec/webenginedriver
 
 fi
 
@@ -94,9 +104,15 @@ rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/etc
 rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/plugins
 rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/qml/QtQuick
 rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/qml
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/pkgconfig
 rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/libexec
 rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/resources
 rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/locale/*/LC_MESSAGES
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/metainfo
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/app-info/xmls
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/app-info
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share
 
 # test if separate-locales is enabled
 if [ -d ${FLATPAK_DEST}/share/runtime/locale ]; then
