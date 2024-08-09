@@ -59,7 +59,7 @@ While the following Python modules are dependencies of the mentioned build tools
 | 6.3        | No         | Yes         |
 | 6.4        | No         | No          |
 | 6.5        | No         | Yes         |
-| 6.6        | Yes        | Yes         |
+| 6.6        | No         | Yes         |
 | 6.7        | Yes        | Yes         |
 
 ## How to use?
