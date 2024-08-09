@@ -2,14 +2,13 @@
     "name": "sip",
     "buildsystem": "simple",
     "build-commands": [
-        "python setup.py build",
-        "python setup.py install --skip-build --prefix=$FLATPAK_DEST --root=/ --optimize=1"
+        "pip3 install --verbose --exists-action=i --no-index --find-links=file://${PWD} --prefix=${FLATPAK_DEST} . --no-build-isolation"
     ],
     "sources": [
         {
             "type": "archive",
-            "url": "https://files.pythonhosted.org/packages/99/85/261c41cc709f65d5b87669f42e502d05cc544c24884121bc594ab0329d8e/sip-6.8.3.tar.gz",
-            "sha256": "888547b018bb24c36aded519e93d3e513d4c6aa0ba55b7cc1affbd45cf10762c",
+            "url": "https://files.pythonhosted.org/packages/6e/52/36987b182711104d5e9f8831dd989085b1241fc627829c36ddf81640c372/sip-6.8.6.tar.gz",
+            "sha256": "7fc959e48e6ec5d5af8bd026f69f5e24d08b3cb8abb342176f5ab8030cc07d7a",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "sip"
