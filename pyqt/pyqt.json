@@ -2,7 +2,8 @@
     "name": "pyqt",
     "build-options": {
         "env": {
-            "EXTRA_PYQT_CONFIG_OPTS": "--disabled-feature=PyQt_OpenGL_ES2 --disabled-feature=PyQt_Permissions"
+            "EXTRA_PYQT_CONFIG_OPTS": "--disabled-feature=PyQt_OpenGL_ES2 --disabled-feature=PyQt_Permissions",
+            "QMAKEPATH": "/app"
         }
     },
     "config-opts": [
