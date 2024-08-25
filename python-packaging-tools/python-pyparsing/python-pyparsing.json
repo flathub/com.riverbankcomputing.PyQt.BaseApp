@@ -7,8 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/9d/ea/6d76df31432a0e6fdf81681a895f009a4bb47b3c39036db3e1b528191d52/pyparsing-3.1.2-py3-none-any.whl",
-            "sha256": "f9db75911801ed778fe61bb643079ff86601aca99fcae6345aa67292038fb742",
+            "url": "https://files.pythonhosted.org/packages/78/4d/e616aed5bcd6556033ade80f47dae49349f74ea86d424516ea5ad94b4472/pyparsing-3.1.3-py3-none-any.whl",
+            "sha256": "1e80fdf93e6c1aeaf4702523f1d48f66d52fa6459096a8f812591157270a5896",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "pyparsing",
