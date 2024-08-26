@@ -19,6 +19,8 @@ else
     --enable=QtNfc
     --enable=QtOpenGL
     --enable=QtOpenGLWidgets
+    --enable=QtPdf
+    --enable=QtPdfWidgets
     --enable=QtPositioning
     --enable=QtPrintSupport
     --enable=QtQml
