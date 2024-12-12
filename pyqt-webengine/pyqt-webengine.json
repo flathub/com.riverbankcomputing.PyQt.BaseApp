@@ -22,12 +22,12 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://files.pythonhosted.org/packages/87/88/230ec599944edf941f4cca8d1439e3a9c8c546715434eee05dce7ff032ed/PyQt6_WebEngine-6.7.0.tar.gz",
-            "sha256": "68edc7adb6d9e275f5de956881e79cca0d71fad439abeaa10d823bff5ac55001",
+            "url": "https://files.pythonhosted.org/packages/cd/c8/cadaa950eaf97f29e48c435e274ea5a81c051e745a3e2f5d9d994b7a6cda/PyQt6_WebEngine-6.8.0.tar.gz",
+            "sha256": "64045ea622b6a41882c2b18f55ae9714b8660acff06a54e910eb72822c2f3ff2",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "PyQt6-WebEngine",
-                "versions": {"<":  "6.8"}
+                "versions": {"<":  "6.9"}
             }
         },
         {
