@@ -54,14 +54,14 @@ While the following Python modules are dependencies of the mentioned build tools
 |------------|------------|-------------|
 | 5.15-21.08 | No         | Yes         |
 | 5.15-22.08 | No         | Yes         |
-| 5.15-23.08 | Yes        | Yes         |
+| 5.15-23.08 | No         | Yes         |
 | 5.15-24.08 | Yes        | Yes         |
 | 6.2        | No         | Yes         |
 | 6.3        | No         | Yes         |
 | 6.4        | No         | No          |
 | 6.5        | No         | Yes         |
 | 6.6        | No         | Yes         |
-| 6.7        | Yes        | Yes         |
+| 6.7        | No         | Yes         |
 | 6.8        | Yes        | Yes         |
 
 ## How to use?
