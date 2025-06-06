@@ -10,6 +10,9 @@
     <name>Riverbank Computing Limited</name>
   </developer>
   <releases>
+    <release version="6.9.1" date="2025-06-06">
+      <description></description>
+    </release>
     <release version="6.9.0" date="2025-04-15"/>
     <release version="6.8.1" date="2025-02-06"/>
     <release version="6.8.0" date="2024-12-12"/>
