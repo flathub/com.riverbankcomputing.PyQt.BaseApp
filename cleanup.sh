@@ -78,9 +78,6 @@ if [ -n "$BASEAPP_REMOVE_WEBENGINE" ] || [ -n "$BASEAPP_REMOVE_PYWEBENGINE" ]; t
   rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6/QtWebEngine{,Core,Quick,Widgets}.abi3.so
   rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6_WebEngine-*.dist-info
 
-  # qtpdf
-  rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6/Qt{,Pdf,PdfWidgets}.abi3.so
-
   # qtwebview
   rm -rfv ${FLATPAK_DEST}/qml/QtWebView
   rm -rfv ${FLATPAK_DEST}/plugins/webview
@@ -89,9 +86,9 @@ if [ -n "$BASEAPP_REMOVE_WEBENGINE" ] || [ -n "$BASEAPP_REMOVE_PYWEBENGINE" ]; t
   # qtwebengine
   rm -rfv ${FLATPAK_DEST}/bin/QtWebEngineProcess
   rm -rfv ${FLATPAK_DEST}/plugins/imageformats
-  rm -rfv ${FLATPAK_DEST}/qml/{QtQuick/Pdf,QtWebEngine}
-  rm -rfv ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/libQt*{Pdf{,Quick,Widgets},WebEngine{,Core,Quick{,DelegatesQml},Widgets}}.so*
-  rm -fv ${FLATPAK_DEST}/lib/libQt*{Pdf{,Quick,Widgets},WebEngine{,Core,Quick{,DelegatesQml},Widgets}}.so*
+  rm -rfv ${FLATPAK_DEST}/qml/QtWebEngine
+  rm -rfv ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/libQt*{WebEngine{,Core,Quick{,DelegatesQml},Widgets}}.so*
+  rm -fv ${FLATPAK_DEST}/lib/libQt*{WebEngine{,Core,Quick{,DelegatesQml},Widgets}}.so*
   rm -rfv ${FLATPAK_DEST}/lib/libQt6WebView*.so*
   rm -rfv ${FLATPAK_DEST}/qtwebengine_dictionaries
   rm -rfv ${FLATPAK_DEST}/resources/qtwebengine*.pak
