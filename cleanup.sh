@@ -78,9 +78,6 @@ if [ -n "$BASEAPP_REMOVE_WEBENGINE" ] || [ -n "$BASEAPP_REMOVE_PYWEBENGINE" ]; t
   rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6/QtWebEngine{,Core,Quick,Widgets}.abi3.so
   rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6_WebEngine-*.dist-info
 
-  # qtpdf
-  rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6/Qt{,Pdf,PdfWidgets}.abi3.so
-
   # qtwebview
   rm -rfv ${FLATPAK_DEST}/qml/QtWebView
   rm -rfv ${FLATPAK_DEST}/plugins/webview
