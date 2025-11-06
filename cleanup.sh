@@ -96,6 +96,8 @@ if [ -n "$BASEAPP_REMOVE_WEBENGINE" ] || [ -n "$BASEAPP_REMOVE_PYWEBENGINE" ]; t
   rm -rfv ${FLATPAK_DEST}/share/locale/*/qtwebengine_dictionaries
   rm -rfv ${FLATPAK_DEST}/translations/qtwebengine_locales
   rm -rfv ${FLATPAK_DEST}/libexec/webenginedriver
+  rm -rfv ${FLATPAK_DEST}/lib/libexec/webenginedriver
+  rm -rfv ${FLATPAK_DEST}/lib/libexec/QtWebEngineProcess
 
 fi
 
@@ -139,5 +141,6 @@ fi
 
 rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/share/locale
 rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/translations
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/libexec
 
 rm -rfv $(readlink -f "$0")
