@@ -79,16 +79,15 @@ if [ -n "$BASEAPP_REMOVE_WEBENGINE" ] || [ -n "$BASEAPP_REMOVE_PYWEBENGINE" ]; t
   rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6_WebEngine-*.dist-info
 
   # qtwebview
-  rm -rfv ${FLATPAK_DEST}/qml/QtWebView
-  rm -rfv ${FLATPAK_DEST}/plugins/webview
+  rm -rfv ${FLATPAK_DEST}/lib/qml/QtWebView
+  rm -rfv ${FLATPAK_DEST}/lib/plugins/webview
   rm -rfv ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/libQt*WebView{,Quick}.so*
 
   # qtwebengine
   rm -rfv ${FLATPAK_DEST}/bin/QtWebEngineProcess
-  rm -rfv ${FLATPAK_DEST}/plugins/imageformats
-  rm -rfv ${FLATPAK_DEST}/qml/QtWebEngine
-  rm -rfv ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/libQt*{WebEngine{,Core,Quick{,DelegatesQml},Widgets}}.so*
-  rm -fv ${FLATPAK_DEST}/lib/libQt*{WebEngine{,Core,Quick{,DelegatesQml},Widgets}}.so*
+  rm -rfv ${FLATPAK_DEST}/lib/qml/QtWebEngine
+  rm -fv ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/libQt*WebEngine{Core,Quick{,DelegatesQml},Widgets}.so*
+  rm -fv ${FLATPAK_DEST}/lib/libQt*WebEngine{Core,Quick{,DelegatesQml},Widgets}.so*
   rm -rfv ${FLATPAK_DEST}/lib/libQt6WebView*.so*
   rm -rfv ${FLATPAK_DEST}/qtwebengine_dictionaries
   rm -rfv ${FLATPAK_DEST}/resources/qtwebengine*.pak
@@ -103,9 +102,9 @@ fi
 
 # empty folders
 rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/etc
-rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/plugins
-rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/qml/QtQuick
-rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/qml
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/plugins
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/qml/QtQuick
+rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/qml
 rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/pkgconfig
 rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu
 rmdir -v --ignore-fail-on-non-empty ${FLATPAK_DEST}/libexec
