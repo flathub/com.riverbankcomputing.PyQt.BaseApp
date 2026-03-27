@@ -7,8 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/23/d1/136eb2cb77520a31e1f64cbae9d33ec6df0d78bdf4160398e86eec8a8754/tomli-2.4.0-py3-none-any.whl",
-            "sha256": "1f776e7d669ebceb01dee46484485f43a4048746235e683bcdffacdf1fb4785a",
+            "url": "https://files.pythonhosted.org/packages/7b/61/cceae43728b7de99d9b847560c262873a1f6c98202171fd5ed62640b494b/tomli-2.4.1-py3-none-any.whl",
+            "sha256": "0d85819802132122da43cb86656f8d1f8c6587d54ae7dcaf30e90533028b49fe",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "tomli",
