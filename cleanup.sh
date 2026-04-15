@@ -43,6 +43,11 @@ rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/setuptools_scm
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/setuptools_scm-*.dist-info
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/setuptools_scm-*-py*.egg-info
 
+# python-vcs-versioning
+rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/vcs_versioning
+rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/vcs_versioning-*.dist-info
+rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/vcs_versioning-*-py*.egg-info
+
 # sip
 rm -rfv ${FLATPAK_DEST}/bin/sip-{build,distinfo,install,module,sdist,wheel}
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/sip-*.dist-info
