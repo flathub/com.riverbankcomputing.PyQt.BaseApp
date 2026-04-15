@@ -15,5 +15,8 @@
                 "packagetype": "bdist_wheel"
             }
         }
+    ],
+    "modules": [
+        "../python-vcs-versioning/python-vcs-versioning.json"
     ]
 }
