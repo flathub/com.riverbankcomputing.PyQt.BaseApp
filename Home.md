@@ -61,12 +61,12 @@ Therefore, please use the latest 6.X branch of KDE runtime with this BaseApp.
 |------------|------------|-------------|
 | 6.10       | Yes        | Yes         |
 | 5.15-25.08 | Yes        | Yes         |
-| 5.15-24.08 | Yes        | Yes         |
 
 ### End-of-life versions
 
 | Branch     | Status     | QtWebEngine |
 |------------|------------|-------------|
+| 5.15-24.08 | EOL        | Yes         |
 | 5.15-23.08 | EOL        | Yes         |
 | 5.15-22.08 | EOL        | Yes         |
 | 5.15-21.08 | EOL        | Yes         |
