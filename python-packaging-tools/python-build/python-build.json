@@ -7,8 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/b2/30/f169e1d8b2071beaf8b97088787e30662b1d8fb82f8c0941d14678c0cbf1/build-1.4.3-py3-none-any.whl",
-            "sha256": "1bc22b19b383303de8f2c8554c9a32894a58d3f185fe3756b0b20d255bee9a38",
+            "url": "https://files.pythonhosted.org/packages/fa/88/6764e7a109dd84294850741501145da90d13cdeac9d4e614929464a37420/build-1.4.4-py3-none-any.whl",
+            "sha256": "8c3f48a6090b39edec1a273d2d57949aaf13723b01e02f9d518396887519f64d",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "build",
