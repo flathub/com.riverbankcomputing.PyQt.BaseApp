@@ -48,23 +48,36 @@ While the following Python modules are dependencies of the mentioned build tools
 * python-tomli
 * python-typing-extensions
 
+### End-of-life Policy
+
+Since PyQt only supports the latest Qt version, this BaseApp only maintains the latest version of 6.X branch and marks older versions as end-of-life (EOL).
+Therefore, please use the latest 6.X branch of KDE runtime with this BaseApp.
+
 ## Branch Comparison
+
+### Supported versions
 
 | Branch     | Maintained | QtWebEngine |
 |------------|------------|-------------|
-| 5.15-21.08 | No         | Yes         |
-| 5.15-22.08 | No         | Yes         |
-| 5.15-23.08 | No         | Yes         |
-| 5.15-24.08 | Yes        | Yes         |
-| 6.2        | No         | Yes         |
-| 6.3        | No         | Yes         |
-| 6.4        | No         | No          |
-| 6.5        | No         | Yes         |
-| 6.6        | No         | Yes         |
-| 6.7        | No         | Yes         |
-| 6.8        | No         | Yes         |
-| 6.9        | No         | Yes         |
 | 6.10       | Yes        | Yes         |
+| 5.15-25.08 | Yes        | Yes         |
+| 5.15-24.08 | Yes        | Yes         |
+
+### End-of-life versions
+
+| Branch     | Status     | QtWebEngine |
+|------------|------------|-------------|
+| 5.15-23.08 | EOL        | Yes         |
+| 5.15-22.08 | EOL        | Yes         |
+| 5.15-21.08 | EOL        | Yes         |
+| 6.9        | EOL        | Yes         |
+| 6.8        | EOL        | Yes         |
+| 6.7        | EOL        | Yes         |
+| 6.6        | EOL        | Yes         |
+| 6.5        | EOL        | Yes         |
+| 6.4        | EOL        | No          |
+| 6.3        | EOL        | Yes         |
+| 6.2        | EOL        | Yes         |
 
 ## How to use?
 
