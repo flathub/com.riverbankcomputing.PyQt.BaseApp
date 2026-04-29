@@ -8,8 +8,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://files.pythonhosted.org/packages/ea/08/88a20c862f40b5c178c517cdc7e93767967dec5ac1b994e226d517991c9b/pyqt5_sip-12.17.1.tar.gz",
-            "sha256": "0eab72bcb628f1926bf5b9ac51259d4fa18e8b2a81d199071135458f7d087ea8",
+            "url": "https://files.pythonhosted.org/packages/f3/31/5ef342de9faee0f3801088946ae103db9b9eaeba3d6a64fefd5ce74df244/pyqt5_sip-12.18.0.tar.gz",
+            "sha256": "71c37db75a0664325de149f43e2a712ec5fa1f90429a21dafbca005cb6767f94",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "PyQt5-sip"

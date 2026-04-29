@@ -7,13 +7,16 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/f7/14/dd3a6053325e882fe191fb4b42289bbdfabf5f44307c302903a8a3236a0a/setuptools_scm-9.2.0-py3-none-any.whl",
-            "sha256": "c551ef54e2270727ee17067881c9687ca2aedf179fa5b8f3fab9e8d73bdc421f",
+            "url": "https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl",
+            "sha256": "f611037d8aae618221503b8fa89319f073438252ae3420e01c9ceec249131a0a",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "setuptools_scm",
                 "packagetype": "bdist_wheel"
             }
         }
+    ],
+    "modules": [
+        "../python-vcs-versioning/python-vcs-versioning.json"
     ]
 }
