@@ -7,8 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/d9/4c/f638c153a62e566c3e0e43f3998f8f97d4c3daadc984bb540461eaa8edf3/vcs_versioning-2.2.0-py3-none-any.whl",
-            "sha256": "69a649bfbbe9f8134e8b15cddc7b27daa00e5eccbcb5128e060a87e94bad8255",
+            "url": "https://files.pythonhosted.org/packages/79/7d/ec9fdd2bb201a419da0c1f7998feecffde0c4688e57a82a359f33af91e6f/vcs_versioning-2.2.1-py3-none-any.whl",
+            "sha256": "ba1f5fc6a53d0cf15ebd5779e41b9b8934937adfceec1eeb707668350fbc3fed",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "vcs_versioning",
