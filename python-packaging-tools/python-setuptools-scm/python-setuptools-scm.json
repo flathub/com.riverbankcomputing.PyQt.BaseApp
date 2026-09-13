@@ -7,8 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/c3/b4/02ac1d9833b882c87b3a4e82703e70eac4ab33d0d15fb123e60bb01f3bc1/setuptools_scm-10.2.1-py3-none-any.whl",
-            "sha256": "b7c82f4102d389ee57dc66ccdb4f9b4bca3c40ba83b43f1f63d68ccd72db2580",
+            "url": "https://files.pythonhosted.org/packages/cc/8a/97f90194a735caf517a2d9cecd9ad4c8519c4402e80b015a726176e98cb7/setuptools_scm-10.3.0-py3-none-any.whl",
+            "sha256": "6ba119665ae859783321da7654a9fa45eda6afe5b804ebf1a3da8682c5ffe6c6",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "setuptools_scm",
