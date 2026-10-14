@@ -7,8 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/bd/24/12818598c362d7f300f18e74db45963dbcb85150324092410c8b49405e42/pyproject_hooks-1.2.0-py3-none-any.whl",
-            "sha256": "9e5c6bfa8dcc30091c74b0cf803c81fdd29d94f01992a7707bc97babb1141913",
+            "url": "https://files.pythonhosted.org/packages/58/86/3276e42c9349f2349a8a0fa6abf145c867ed7719a56c907e6ef21edf1462/pyproject_hooks-1.3.0-py3-none-any.whl",
+            "sha256": "733909c6ac133d222c0b8cfc11364f19d363793d8fbcd8bb7240c5220af8d35d",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "pyproject_hooks",
