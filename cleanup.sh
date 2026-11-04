@@ -7,7 +7,7 @@ rm -rfv ${FLATPAK_DEST}/share/qt
 
 # pyqt-builder
 rm -rfv ${FLATPAK_DEST}/bin/pyqt-{bundle,qt-wheel}
-rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt_builder-*
+rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/{PyQt,pyqt}_builder-*
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/pyqtbuild
 
 # pyqt-sip
@@ -38,11 +38,13 @@ rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/pep517-*.dist-info
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/pep517-*-py*.egg-info
 
 # python-setuptools-scm
+rm -rfv ${FLATPAK_DEST}/bin/setuptools-scm
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/setuptools_scm
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/setuptools_scm-*.dist-info
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/setuptools_scm-*-py*.egg-info
 
 # python-vcs-versioning
+rm -rfv ${FLATPAK_DEST}/bin/vcs-versioning
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/vcs_versioning
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/vcs_versioning-*.dist-info
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/vcs_versioning-*-py*.egg-info
@@ -81,7 +83,7 @@ if [ -n "$BASEAPP_REMOVE_WEBENGINE" ] || [ -n "$BASEAPP_REMOVE_PYWEBENGINE" ]; t
 
   # pyqtwebengine
   rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6/QtWebEngine{,Core,Quick,Widgets}.abi3.so
-  rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/PyQt6_WebEngine-*.dist-info
+  rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/{PyQt6_WebEngine,pyqt6_webengine}-*.dist-info
 
   # qtwebview
   rm -rfv ${FLATPAK_DEST}/lib/qml/QtWebView
