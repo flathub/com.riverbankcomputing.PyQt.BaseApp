@@ -32,11 +32,6 @@ rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/installer
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/installer-*.dist-info
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/installer-*-py*.egg-info
 
-# python-pep517
-rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/pep517
-rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/pep517-*.dist-info
-rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/pep517-*-py*.egg-info
-
 # python-setuptools-scm
 rm -rfv ${FLATPAK_DEST}/bin/setuptools-scm
 rm -rfv ${FLATPAK_DEST}/lib/python*/site-packages/setuptools_scm
